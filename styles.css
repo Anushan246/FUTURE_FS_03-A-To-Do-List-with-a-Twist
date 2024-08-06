@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Increase the width if needed */
+    overflow: hidden; /* Ensure contents don't overflow the container */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between inputs */
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#reminderInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+#reminderInput:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#addTaskBtn:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Limit the height to prevent overflow */
+    overflow-y: auto; /* Add a scrollbar if needed */
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+.task-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-details, .task-reminder {
+    font-size: 0.9em;
+    color: #888;
+    word-break: break-word; /* Break long words to prevent overflow */
+    margin-bottom: 5px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button.delete-btn, button.edit-btn {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px; /* Space above buttons */
+}
+
+button.delete-btn:hover, button.edit-btn:hover {
+    background-color: #c82333;
+}
+
+button.edit-btn {
+    background-color: #28a745;
+    margin-right: 5px;
+}
+
+button.edit-btn:hover {
+    background-color: #218838;
+}
